@@ -305,6 +305,10 @@ var sleeping = document.createElement('li');
 sleeping.innerHTML = 'Sleeping';
 hobbies.appendChild(sleeping);
 
+
+
+
+
 var crying = document.createElement('li');
 crying.innerHTML = 'Crying';
 hobbies.appendChild(crying);
@@ -427,6 +431,167 @@ setInterval(function() {
     crawling.style.fontStyle = 'normal';
   }
 }, 250);
+
+var emotions = document.createElement('img');
+emotions.src = 'https://github.com/claire-moon/welcometomywebsite/blob/master/images/emotions.gif?raw=true';
+emotions.id = 'emotions';
+document.body.appendChild(emotions);
+
+var emotions = document.getElementById('emotions');
+var size = 1;
+var direction = 1;
+var interval = setInterval(function() {
+  size += direction * 0.01;
+  if (size > 1.5) {
+    direction = -1;
+  } else if (size < 0.5) {
+    direction = 1;
+  }
+  emotions.style.width = size * 100 + '%';
+}, 10);
+
+var words = 'Are you interested? Are you intrigued? Are you excited? Are you bored? Are you sleepy? I know I am. Oh wait, no, that\'s just my natural state. But seriously, though, aren\'t I great? Am I? Do you really think so? I do! I do? Oh, wow. I thought about something. Something really interesting: me! Am I? Do you think I\'m interesting?';
+var wordsNode = document.createElement('div');
+wordsNode.innerHTML = words;
+document.body.appendChild(wordsNode);
+
+var wordsArray = words.split(' ');
+var wordsArrayLength = wordsArray.length;
+
+var randomize = function() {
+  for (var i = 0; i < wordsArrayLength; i++) {
+    var randomSize = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
+    wordsArray[i] = '<span style="font-size: ' + randomSize + 'px">' + wordsArray[i] + '</span>';
+  }
+  wordsNode.innerHTML = wordsArray.join(' ');
+};
+
+setInterval(randomize, 1000);
+
+var blog = document.createElement('div');
+blog.innerHTML = 'BLOG!';
+blog.style.fontSize = '100px';
+blog.style.position = 'absolute';
+blog.style.width = '100%';
+blog.style.height = '100%';
+blog.style.color = '#fff';
+blog.style.textAlign = 'center';
+blog.style.lineHeight = '100%';
+blog.style.fontFamily = 'sans-serif';
+blog.style.fontWeight = 'bold';
+blog.style.textShadow = '0px 0px 10px #fff';
+document.body.appendChild(blog);
+setInterval(function() {
+  blog.style.fontSize = Math.floor(Math.random() * 100) + 'px';
+}, 500);
+
+var colors = ['#f00', '#0f0', '#00f', '#ff0', '#f0f', '#0ff'];
+setInterval(function() {
+  blog.style.color = colors[Math.floor(Math.random() * colors.length)];
+}, 100);
+
+setInterval(function() {
+  blog.innerHTML = blog.innerHTML.toUpperCase();
+  setTimeout(function() {
+    blog.innerHTML = blog.innerHTML.toLowerCase();
+  }, 100);
+}, 200);
+
+var lineBreak16 = document.createElement('br');
+document.body.insertBefore(lineBreak16, blog);
+
+var date = document.createElement('div');
+date.innerHTML = '01/01/1999';
+document.body.appendChild(date);
+
+var title = document.createElement('div');
+title.innerHTML = 'First Blog Post!';
+document.body.appendChild(title);
+
+var blogPost = document.createElement('div');
+blogPost.innerHTML = '<h1>First Blog Post!</h1><p>Hey, this is my first blog post! It\'s about time, I have a lot of thoughts that I\'m ready to get out there into the wild. Like, for example, did you know that a blog is an online journal? Why didn\'t they call it a Onlojo then? I always wondered about that. I also always wonder about birds. I have seen some pictures of birds in some books and also on TV before and they\'re really cool looking. I wonder if one of them will ever eat me alive one day. I wonder if it will hurt. I don\'t mind if it hurts. All I really want out of this blog is to share my thoughts. I have so many of them. They never stop. I think that is why they made blogs. I one time read a blog about a man who built a table all by himself. I wonder how that man is doing. Do you think he\'s still building tables? I hope so, because he\'s really good at it. When I read his blog I got really sad because I don\'t know how to build a table. Tables are really important because they hold books and food and papers and other things. Most of the time people put plants on them too. I tried to build a table once and it didn\'t work out too well. It seems really hard. I cried all night because I couldn\'t build the table. My parents told me that I should try and be better. I think they are right. If I can\'t be better, I should try and be different. I guess it\'s okay, because I am really good at other things. Like writing blogs! And making websites! What do you think about this website? Does it look nice? I worked really hard on making it. The colors are so pretty to look at too. Every time I look at them I want to kill myself. My parents say if I do that I will go to Hell.  I\'m not afraid of Hell, I think it will be pretty fun to learn more about Satan. He seems really nice and he can probably teach me how to build a table. What do you think about tables? How many legs do you think a table should have? Do you think that legs are really important to a table? If I had wings, I would probably spend all day flying around. But I don\'t have wings, so that\'s why I write blogs instead. It\'s pretty much the same thing as flying around, just without the actual flying around. I think I would look pretty with wings. They would be puffy and white. Like angel wings! Do you think I\'m an angel? Really? Wow. Are you sure? Because I haven\'t done anything angelic in a long time. Dad says that angels have to do everything that God tells them to do, but all I ever hear God say is "It is time. It is time. It is time." I think if God ever wanted me to do something he would tell me directly, but all he ever says is "It is time. It is time. It is time. It is time. It is time. It is time. It is time.". Is that what Dad hears? Is that what Mom hears? Is that what you hear? Is it time yet? Is it time? Is it time? Is it time? Is it time?</p>';
+document.body.appendChild(blogPost);
+
+var blogPost = document.getElementsByTagName('p')[0];
+var isItTime = 'Is it time?';
+var isItTimeInterval = setInterval(function() {
+  blogPost.innerHTML += isItTime;
+}, 1000);
+/* Whenever you click on the words they turn bold like an on and off switch. */
+var blogPost = document.getElementsByTagName('p')[0];
+var isItTime = 'Is it time?';
+var isItTimeInterval = setInterval(function() {
+  blogPost.innerHTML += isItTime;
+}, 1000);
+var bold = false;
+blogPost.addEventListener('click', function() {
+  if (bold) {
+    blogPost.style.fontWeight = 'normal';
+  } else {
+    blogPost.style.fontWeight = 'bold';
+  }
+  bold = !bold;
+});
+
+var title = document.getElementsByTagName('h1')[0];
+var titleInterval = setInterval(function() {
+  var titleText = title.innerHTML;
+  var newTitleText = '';
+  for (var i = 0; i < titleText.length; i++) {
+    var random = Math.random();
+    if (random > 0.5) {
+      newTitleText += titleText[i].toUpperCase();
+    } else {
+      newTitleText += titleText[i].toLowerCase();
+    }
+  }
+  title.innerHTML = newTitleText;
+}, 1000);
+
+var exclamationInterval = setInterval(function() {
+  var titleText = title.innerHTML;
+  var newTitleText = '';
+  for (var i = 0; i < titleText.length; i++) {
+    if (i === titleText.length - 1) {
+      var random = Math.random();
+      if (random > 0.66) {
+        newTitleText += '?';
+      } else if (random > 0.33) {
+        newTitleText += '.';
+      } else {
+        newTitleText += '!';
+      }
+    } else {
+      newTitleText += titleText[i];
+    }
+  }
+  title.innerHTML = newTitleText;
+}, 1000);
+
+var commentBox = document.createElement('div');
+commentBox.innerHTML = '<textarea rows="10" cols="50"></textarea>';
+document.body.appendChild(commentBox);
+var commentCaption = document.createElement('div');
+commentCaption.innerHTML = 'Leave a comment about what you thought!';
+document.body.appendChild(commentCaption);
+
+var commentBox = document.getElementsByTagName('textarea')[0];
+commentBox.value = 'I hate you. I wish you didn\'t exist. You were a mistake. You never do anything right. No one could ever love you.';
+
+var commentBox = document.getElementsByTagName('textarea')[0];
+commentBox.disabled = true;
+
+var button = document.createElement('button');
+button.innerHTML = 'Press me!';
+document.body.appendChild(button);
+
+var exclamationCount = 0;
+button.onclick = function() {
+  exclamationCount++;
+  button.innerHTML = 'Press me!' + '!'.repeat(exclamationCount);
+  button.style.fontSize = (exclamationCount * 10) + 'px';
+};
+
 });
         </script>
     </head>
