@@ -1,0 +1,433 @@
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+var gonzo = document.createElement('div');
+gonzo.innerHTML = 'I lost my pet Danny. If you find her, could you please let me know where she is? She would always bite my toe when I would watch Space Jam. It was so cute. If you know where she is, please let me know. Please let me know.';
+document.body.appendChild(gonzo);
+var gonzoNumber = document.createElement('div');
+gonzoNumber.innerHTML = Math.floor(Math.random() * 1000000);
+document.body.appendChild(gonzoNumber);
+document.body.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+document.body.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+document.body.style.fontFamily = 'Comic Sans MS';
+document.body.style.fontSize = 'xx-large';
+document.body.style.textAlign = 'center';
+document.body.style.paddingTop = '50px';
+document.body.style.paddingBottom = '50px';
+
+setInterval(function() {
+  gonzoNumber.innerHTML = Math.floor(Math.random() * 1000000);
+}, 1000);
+
+var gonzoText = document.createElement('div');
+gonzoText.innerHTML = 'I\'m so sorry, please forgive me.';
+document.body.appendChild(gonzoText);
+setInterval(function() {
+  var randomNumber = Math.floor(Math.random() * 3);
+  if (randomNumber === 0) {
+    gonzoText.innerHTML = 'I\'m so sorry, please forgive me.';
+  } else if (randomNumber === 1) {
+    gonzoText.innerHTML = 'I did this to you, I\'ll never do it again.';
+  } else {
+    gonzoText.innerHTML = 'You\'re gone and I don\'t know what to do. I just don\'t know what to do anymore.';
+  }
+}, 1000);
+
+setInterval(function() {
+  var gonzoString = gonzo.innerHTML;
+  var gonzoArray = gonzoString.split('');
+  var randomNumber = Math.floor(Math.random() * gonzoArray.length);
+  var randomLetter = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+  gonzoArray[randomNumber] = randomLetter;
+  gonzo.innerHTML = gonzoArray.join('');
+}, 1000);
+
+var lineBreak = document.createElement('br');
+document.body.appendChild(lineBreak);
+
+var moodRing = document.createElement('div');
+moodRing.innerHTML = '<b>Mood Ring!</b>';
+document.body.appendChild(moodRing);
+var moodRingEmoticon = document.createElement('div');
+moodRingEmoticon.innerHTML = '&#128512;';
+document.body.appendChild(moodRingEmoticon);
+setInterval(function() {
+  var randomNumber = Math.floor(Math.random() * 10);
+  if (randomNumber === 0) {
+    moodRingEmoticon.innerHTML = '&#128512;';
+  } else if (randomNumber === 1) {
+    moodRingEmoticon.innerHTML = '&#128513;';
+  } else if (randomNumber === 2) {
+    moodRingEmoticon.innerHTML = '&#128514;';
+  } else if (randomNumber === 3) {
+    moodRingEmoticon.innerHTML = '&#128515;';
+  } else if (randomNumber === 4) {
+    moodRingEmoticon.innerHTML = '&#128516;';
+  } else if (randomNumber === 5) {
+    moodRingEmoticon.innerHTML = '&#128517;';
+  } else if (randomNumber === 6) {
+    moodRingEmoticon.innerHTML = '&#128518;';
+  } else if (randomNumber === 7) {
+    moodRingEmoticon.innerHTML = '&#128519;';
+  } else if (randomNumber === 8) {
+    moodRingEmoticon.innerHTML = '&#128520;';
+  } else {
+    moodRingEmoticon.innerHTML = '&#128521;';
+  }
+}, 500);
+
+var moodRingDescription = document.createElement('div');
+moodRingDescription.innerHTML = 'Happy';
+document.body.appendChild(moodRingDescription);
+setInterval(function() {
+  var randomNumber = Math.floor(Math.random() * 10);
+  if (randomNumber === 0) {
+    moodRingDescription.innerHTML = 'Happy';
+  } else if (randomNumber === 1) {
+    moodRingDescription.innerHTML = 'Disgusted';
+  } else if (randomNumber === 2) {
+    moodRingDescription.innerHTML = 'In Love';
+  } else if (randomNumber === 3) {
+    moodRingDescription.innerHTML = 'Complete and Total Agony';
+  } else if (randomNumber === 4) {
+    moodRingDescription.innerHTML = 'Delicious';
+  } else if (randomNumber === 5) {
+    moodRingDescription.innerHTML = 'Excited';
+  } else if (randomNumber === 6) {
+    moodRingDescription.innerHTML = 'Afraid of Being Alive';
+  } else if (randomNumber === 7) {
+    moodRingDescription.innerHTML = 'Ready for Anything!';
+  } else if (randomNumber === 8) {
+    moodRingDescription.innerHTML = 'Hysteria Hysteria Hysteria';
+  } else {
+    moodRingDescription.innerHTML = 'Hungry?';
+  }
+}, 500);
+
+document.body.addEventListener('click', function() {
+  document.body.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+});
+
+var header = document.createElement('div');
+header.innerHTML = '<img src="https://github.com/claire-moon/welcometomywebsite/blob/master/images/cooltext418593496828788.gif?raw=true">';
+document.body.appendChild(header);
+
+document.body.insertBefore(header, document.body.firstChild);
+
+var lineBreak1 = document.createElement('br');
+document.body.insertBefore(lineBreak1, header.nextSibling);
+var lineBreak2 = document.createElement('br');
+document.body.insertBefore(lineBreak2, header.nextSibling);
+
+var pleaseRead = document.createElement('div');
+pleaseRead.innerHTML = 'Please Read!';
+document.body.insertBefore(pleaseRead, gonzo);
+
+var aboutMe = document.createElement('div');
+aboutMe.innerHTML = 'Hello! Welcome to my Website! Here\'s what I\'m going to do with it: I\'m going to use this website to put all of my thoughts, dreams, hopes, fears, illnesses, recipes, photos, ideas, articles, movies, books, and whatever else I can think of in one place! You name it, it\'s here. Could you name me? What\'s my name? What am I? I\'m a human being. I\'m a woman. I\'m a mother. I\'m a wife. I\'m a sister. I\'m a daughter. I\'m a friend. I\'m a neighbor. I\'m a person. I\'m alive. I\'m dead. I\'m so fucking dead. I\'m so fucking alive. I\'m a ghost. I\'m a spirit. I\'m a soul. I\'m a body. I\'m a mind. I\'m a god. I\'m a human being.  Check back often to see what I\'ve written. It will probably be interesting. Or not. What do you think? Could you tell me what you think? Leave a comment on my blog to let me know what you think. Please? I just I just want to know what you think. What are you thinking? What if, bear with me for a moment, sorry, I meant to say bare with me. Sometimes I don\'t know what I\'m saying. Anyway, what if you left a comment on my blog telling me what you think? What would that be like? Would it be interesting? Would you tell me that it\'s time to go to sleep? Maybe, oh, get this, maybe you could tell me that you think I\'m a human being! Wait, did you hear that? I think I heard something.';
+document.body.insertBefore(aboutMe, gonzo);
+aboutMe.style.fontFamily = 'Times New Roman';
+setInterval(function() {
+  var randomNumber = Math.floor(Math.random() * 10);
+  if (randomNumber === 0) {
+    aboutMe.style.fontFamily = 'Times New Roman';
+  } else if (randomNumber === 1) {
+    aboutMe.style.fontFamily = 'Comic Sans MS';
+  } else if (randomNumber === 2) {
+    aboutMe.style.fontFamily = 'Arial';
+  } else if (randomNumber === 3) {
+    aboutMe.style.fontFamily = 'Courier New';
+  } else if (randomNumber === 4) {
+    aboutMe.style.fontFamily = 'Georgia';
+  } else if (randomNumber === 5) {
+    aboutMe.style.fontFamily = 'Impact';
+  } else if (randomNumber === 6) {
+    aboutMe.style.fontFamily = 'Lucida Console';
+  } else if (randomNumber === 7) {
+    aboutMe.style.fontFamily = 'Lucida Sans Unicode';
+  } else if (randomNumber === 8) {
+    aboutMe.style.fontFamily = 'Palatino Linotype';
+  } else {
+    aboutMe.style.fontFamily = 'Tahoma';
+  }
+}, 5000);
+
+document.body.appendChild(aboutMe);
+
+var lineBreak3 = document.createElement('br');
+document.body.insertBefore(lineBreak3, aboutMe);
+var lineBreak4 = document.createElement('br');
+document.body.insertBefore(lineBreak4, aboutMe);
+
+var whatsMyName = document.createElement('div');
+whatsMyName.innerHTML = '<b>What\'s My Name?</b>';
+document.body.insertBefore(whatsMyName, aboutMe.nextSibling);
+
+var lineBreak5 = document.createElement('br');
+document.body.insertBefore(lineBreak5, whatsMyName);
+var lineBreak6 = document.createElement('br');
+document.body.insertBefore(lineBreak6, whatsMyName);
+var lineBreak7 = document.createElement('br');
+document.body.insertBefore(lineBreak7, whatsMyName);
+var lineBreak8 = document.createElement('br');
+document.body.insertBefore(lineBreak8, whatsMyName);
+
+whatsMyName.style.fontSize = 'xx-large';
+
+var whatsMyNameInput = document.createElement('input');
+whatsMyNameInput.type = 'text';
+document.body.insertBefore(whatsMyNameInput, whatsMyName.nextSibling);
+whatsMyNameInput.addEventListener('keyup', function() {
+  whatsMyNameInput.value = '';
+});
+
+var lineBreak9 = document.createElement('br');
+document.body.insertBefore(lineBreak9, whatsMyNameInput);
+
+whatsMyNameInput.style.fontSize = 'xx-large';
+
+whatsMyNameInput.addEventListener('keyup', function() {
+  whatsMyNameInput.value = 'SHITHEAD MCFUCKFACE';
+});
+
+whatsMyNameInput.style.textAlign = 'center';
+
+var lineBreak10 = document.createElement('br');
+document.body.insertBefore(lineBreak10, gonzoNumber);
+var lineBreak11 = document.createElement('br');
+document.body.insertBefore(lineBreak11, gonzoNumber);
+
+whatsMyName.addEventListener('mouseover', function() {
+  var whatsMyNameString = whatsMyName.innerHTML;
+  var whatsMyNameArray = whatsMyNameString.split('');
+  for (var i = 0; i < whatsMyNameArray.length; i++) {
+    var randomNumber = Math.floor(Math.random() * 26);
+    var randomLetter = String.fromCharCode(randomNumber + 97);
+    whatsMyNameArray[i] = randomLetter;
+  }
+  whatsMyName.innerHTML = whatsMyNameArray.join('');
+});
+whatsMyName.addEventListener('mouseout', function() {
+  whatsMyName.innerHTML = '<b>What\'s My Name?</b>';
+});
+
+setInterval(function() {
+  whatsMyNameInput.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+}, 3000);
+
+whatsMyNameInput.style.color = 'white';
+whatsMyNameInput.style.fontFamily = 'Comic Sans MS';
+
+var learnAboutMe = document.createElement('div');
+learnAboutMe.innerHTML = 'Oh, wow, you want to learn about me? That\'s cool! Why? Why do you want to know? Is it because I\'m so cool? So beautiful? So funny? So smart? So clever? So interesting? Am I all those things? Maybe, who knows. Do you know? Never mind, I don\'t want to know. I wish I didn\'t ask. I wish I hadn\'t brought this up at all. Why am I telling you all this? Is it because I\'m lonely and just want someone to talk to? Or is it because I think you really care and are actually interested in learning about me? But, yeah, here\'s my page! It\'s a website! They say a website is a good thing. It makes things look good and presentable. Websites are awesome! And so is this one! Be prepared to learn about the best person in the world: me!';
+document.body.insertBefore(learnAboutMe, whatsMyNameInput.nextSibling);
+
+var lineBreak12 = document.createElement('br');
+document.body.insertBefore(lineBreak12, learnAboutMe);
+var lineBreak13 = document.createElement('br');
+document.body.insertBefore(lineBreak13, learnAboutMe);
+var lineBreak14 = document.createElement('br');
+document.body.insertBefore(lineBreak14, learnAboutMe);
+var lineBreak15 = document.createElement('br');
+document.body.insertBefore(lineBreak15, learnAboutMe);
+
+learnAboutMe.style.fontSize = 'medium';
+
+var aboutMe2 = document.createElement('div');
+aboutMe2.innerHTML = 'This is about me. All about me. No, seriously. All about me. I\'m great! And you\'ll know it if you just keep reading! I\'m so funny. I\'m so random. I\'m so quirky. I have a personality. I\'m so unique. So special. I am really cool. You got that? You with me soldier? Are you ready? Are you prepared? Is it time? Okay, because, I don\'t know what to do. Below you will find a list of my favorite hobbies and interests:';
+document.body.insertBefore(aboutMe2, learnAboutMe.nextSibling);
+
+var lineBreak16 = document.createElement('br');
+document.body.insertBefore(lineBreak16, aboutMe2);
+var lineBreak17 = document.createElement('br');
+document.body.insertBefore(lineBreak17, aboutMe2);
+
+learnAboutMe.style.fontFamily = 'Impact';
+aboutMe2.style.fontFamily = 'Impact';
+
+learnAboutMe.style.transform = 'rotate(1deg)';
+
+setInterval(function() {
+  aboutMe2.style.transform = 'rotate(' + Math.floor(Math.random() * 360) + 'deg)';
+}, 3000);
+
+setInterval(function() {
+  aboutMe2.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+}, 500);
+
+var hobbies = document.createElement('ul');
+document.body.insertBefore(hobbies, aboutMe2.nextSibling);
+
+var working = document.createElement('li');
+working.innerHTML = 'Working';
+hobbies.appendChild(working);
+
+var sleeping = document.createElement('li');
+sleeping.innerHTML = 'Sleeping';
+hobbies.appendChild(sleeping);
+
+var crying = document.createElement('li');
+crying.innerHTML = 'Crying';
+hobbies.appendChild(crying);
+
+var laughing = document.createElement('li');
+laughing.innerHTML = 'Laughing';
+hobbies.appendChild(laughing);
+
+var crying = document.createElement('li');
+crying.innerHTML = 'Crying';
+hobbies.appendChild(crying);
+
+var eating = document.createElement('li');
+eating.innerHTML = 'Eating';
+hobbies.appendChild(eating);
+
+var gaming = document.createElement('li');
+gaming.innerHTML = 'Gaming';
+hobbies.appendChild(gaming);
+
+var drinking = document.createElement('li');
+drinking.innerHTML = 'Drinking';
+hobbies.appendChild(drinking);
+
+var smoking = document.createElement('li');
+smoking.innerHTML = 'Smoking';
+hobbies.appendChild(smoking);
+
+var crying = document.createElement('li');
+crying.innerHTML = 'Crying';
+hobbies.appendChild(crying);
+
+var sleeping = document.createElement('li');
+sleeping.innerHTML = 'Sleeping';
+hobbies.appendChild(sleeping);
+
+var crying = document.createElement('li');
+crying.innerHTML = 'Crying';
+hobbies.appendChild(crying);
+
+var cooking = document.createElement('li');
+cooking.innerHTML = 'Cooking';
+hobbies.appendChild(cooking);
+
+var dancing = document.createElement('li');
+dancing.innerHTML = 'Dancing';
+hobbies.appendChild(dancing);
+
+var crying = document.createElement('li');
+crying.innerHTML = 'Crying';
+hobbies.appendChild(crying);
+
+var singing = document.createElement('li');
+singing.innerHTML = 'Singing';
+hobbies.appendChild(singing);
+
+var watching = document.createElement('li');
+watching.innerHTML = 'Watching';
+hobbies.appendChild(watching);
+
+var walking = document.createElement('li');
+walking.innerHTML = 'Walking';
+hobbies.appendChild(walking);
+
+var crawling = document.createElement('li');
+crawling.innerHTML = 'Crawling';
+hobbies.appendChild(crawling);
+
+var sleeping = document.createElement('li');
+sleeping.innerHTML = 'Sleeping';
+hobbies.appendChild(sleeping);
+
+var singing = document.createElement('li');
+singing.innerHTML = 'Singing';
+hobbies.appendChild(singing);
+
+
+
+setInterval(function() {
+  working.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  sleeping.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  crying.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  laughing.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  eating.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  gaming.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  drinking.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  smoking.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  cooking.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  dancing.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  watching.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  walking.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  crawling.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+}, 500);
+
+setInterval(function() {
+  hobbies.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+}, 500);
+
+hobbies.style.listStyleType = 'none';
+
+setInterval(function() {
+  var randomNumber = Math.floor(Math.random() * 2);
+  if (randomNumber === 0) {
+    working.style.fontWeight = 'bold';
+    working.style.fontStyle = 'italic';
+    sleeping.style.fontWeight = 'bold';
+    sleeping.style.fontStyle = 'italic';
+    crying.style.fontWeight = 'bold';
+    crying.style.fontStyle = 'italic';
+    laughing.style.fontWeight = 'bold';
+    laughing.style.fontStyle = 'italic';
+    eating.style.fontWeight = 'bold';
+    eating.style.fontStyle = 'italic';
+    gaming.style.fontWeight = 'bold';
+    gaming.style.fontStyle = 'italic';
+    drinking.style.fontWeight = 'bold';
+    drinking.style.fontStyle = 'italic';
+    smoking.style.fontWeight = 'bold';
+    smoking.style.fontStyle = 'italic';
+    cooking.style.fontWeight = 'bold';
+    cooking.style.fontStyle = 'italic';
+    dancing.style.fontWeight = 'bold';
+    dancing.style.fontStyle = 'italic';
+    watching.style.fontWeight = 'bold';
+    watching.style.fontStyle = 'italic';
+    walking.style.fontWeight = 'bold';
+    walking.style.fontStyle = 'italic';
+    crawling.style.fontWeight = 'bold';
+    crawling.style.fontStyle = 'italic';
+  } else {
+    working.style.fontWeight = 'normal';
+    working.style.fontStyle = 'normal';
+    sleeping.style.fontWeight = 'normal';
+    sleeping.style.fontStyle = 'normal';
+    crying.style.fontWeight = 'normal';
+    crying.style.fontStyle = 'normal';
+    laughing.style.fontWeight = 'normal';
+    laughing.style.fontStyle = 'normal';
+    eating.style.fontWeight = 'normal';
+    eating.style.fontStyle = 'normal';
+    gaming.style.fontWeight = 'normal';
+    gaming.style.fontStyle = 'normal';
+    drinking.style.fontWeight = 'normal';
+    drinking.style.fontStyle = 'normal';
+    smoking.style.fontWeight = 'normal';
+    smoking.style.fontStyle = 'normal';
+    cooking.style.fontWeight = 'normal';
+    cooking.style.fontStyle = 'normal';
+    dancing.style.fontWeight = 'normal';
+    dancing.style.fontStyle = 'normal';
+    watching.style.fontWeight = 'normal';
+    watching.style.fontStyle = 'normal';
+    walking.style.fontWeight = 'normal';
+    walking.style.fontStyle = 'normal';
+    crawling.style.fontWeight = 'normal';
+    crawling.style.fontStyle = 'normal';
+  }
+}, 250);
+});
+        </script>
+    </head>
+</html>
