@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <script>
@@ -22,16 +23,16 @@ setInterval(function() {
 }, 1000);
 
 var gonzoText = document.createElement('div');
-gonzoText.innerHTML = 'I\'m so sorry, please forgive me.';
+gonzoText.innerHTML = 'The world is so big.';
 document.body.appendChild(gonzoText);
 setInterval(function() {
   var randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber === 0) {
-    gonzoText.innerHTML = 'I\'m so sorry, please forgive me.';
+    gonzoText.innerHTML = 'The world is so big.';
   } else if (randomNumber === 1) {
-    gonzoText.innerHTML = 'I did this to you, I\'ll never do it again.';
+    gonzoText.innerHTML = 'The world is so small.';
   } else {
-    gonzoText.innerHTML = 'You\'re gone and I don\'t know what to do. I just don\'t know what to do anymore.';
+    gonzoText.innerHTML = 'The world is so medium.';
   }
 }, 1000);
 
@@ -576,7 +577,7 @@ commentCaption.innerHTML = 'Leave a comment about what you thought!';
 document.body.appendChild(commentCaption);
 
 var commentBox = document.getElementsByTagName('textarea')[0];
-commentBox.value = 'I hate you. I wish you didn\'t exist. You were a mistake. You never do anything right. No one could ever love you.';
+commentBox.value = 'I hate you. I wish you didn\'t exist. You were a mistake. You never do anything right. No one could ever love you. You are ugly. You are unimportant. You are worthless. You are to blame for everything that goes wrong. You are likely to fail. You\'re not good enough. You will never amount to anything. You are hopeless. You will never be able to change. You will never be able to be loved. You will always be alone. You are shit. You are nothing but shit. You are Shit. There is no one for you. You make me angry. You disappoint me. You never try hard enough. You can\'t fix anything. You don\'t understand. You never change. You don\'t get it. You won\'t ever get it. You\'re stupid. Your feelings don\'t matter. You are a burden to everyone. You\'re pathetic. You\'re nothing. You\'re worthless scum. You\'re nothing but an ugly piece of shit. A worthless, ugly piece of shit. Because you are. You\'re fucked up. You\'re broken. You\'re hopeless, that\'s what you are. You\'re fucking hopeless. The world would be better off if you killed yourself. Nobody wants you. Nobody will ever care about you. Nobody loves you. Nobody will ever love you. You\'ll always be alone. You\'re fucking worthless. There\'s nothing good about you. You\'re just a fucking piece of shit.';
 
 var commentBox = document.getElementsByTagName('textarea')[0];
 commentBox.disabled = true;
