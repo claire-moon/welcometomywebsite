@@ -2,6 +2,55 @@
     <head>
         <script>
         document.addEventListener("DOMContentLoaded", function() {
+        
+var black = document.createElement('div');
+black.style.position = 'fixed';
+black.style.top = '0';
+black.style.left = '0';
+black.style.width = '100%';
+black.style.height = '100%';
+black.style.backgroundColor = 'black';
+black.style.zIndex = '9999';
+black.style.display = 'none';
+document.body.appendChild(black);
+setInterval(function() {
+  black.style.display = 'block';
+  setTimeout(function() {
+    black.style.display = 'none';
+  }, 1000);
+}, 10000);
+
+var message = document.createElement('div');
+message.style.position = 'fixed';
+message.style.top = '50%';
+message.style.left = '50%';
+message.style.transform = 'translate(-50%, -50%)';
+message.style.color = 'red';
+message.style.fontSize = '20px';
+message.style.textAlign = 'center';
+message.style.zIndex = '9999';
+message.style.display = 'none';
+message.innerHTML = 'I dream of the day where this waking life will come to a close, so that the world beyond this veil of darkness can begin. You will find me in a sea of light, a billion stars and planets, the infinite reaches of space, and the universe beyond. You will find me in the swirling colors of the aurora borealis, the mighty cascades of waterfalls, the colors of the rainbow, the warmth of fire, the flicker of candlelight, and the softness of a newborn’s cry. You will find me in the scent of a rose, the fragrance of a freshly baked pie, the smell of fresh baked bread, the fragrance of a freshly cut lawn, the scent of a freshly opened book, and the fragrance of fresh rain. You will find me in the sound of laughter, the song of a bird, the sound of a gentle breeze, the sound of a babbling brook, the sound of a baby’s cry, and the sound of silence. You will find me in the warmth of a hug, the warmth of a smile, the warmth of a touch, the warmth of a kind word, the warmth of a gentle hand, and the warmth of a loving heart.';
+document.body.appendChild(message);
+setInterval(function() {
+  message.style.display = 'block';
+  setTimeout(function() {
+    message.style.display = 'none';
+  }, 1000);
+}, 10000);
+
+setInterval(function() {
+  message.style.transform = 'translate(-50%, -50%) rotate(0deg)';
+  setTimeout(function() {
+    message.style.transform = 'translate(-50%, -50%) rotate(5deg)';
+  }, 200);
+  setTimeout(function() {
+    message.style.transform = 'translate(-50%, -50%) rotate(-5deg)';
+  }, 400);
+  setTimeout(function() {
+    message.style.transform = 'translate(-50%, -50%) rotate(0deg)';
+  }, 600);
+}, 800);
 
 var gonzo = document.createElement('div');
 gonzo.innerHTML = 'I lost my pet Danny. If you find her, could you please let me know where she is? She would always bite my toe when I would watch Space Jam. It was so cute. If you know where she is, please let me know. Please let me know.';
@@ -503,7 +552,7 @@ title.innerHTML = 'First Blog Post!';
 document.body.appendChild(title);
 
 var blogPost = document.createElement('div');
-blogPost.innerHTML = '<h1>First Blog Post!</h1><p>Hey, this is my first blog post! It\'s about time, I have a lot of thoughts that I\'m ready to get out there into the wild. Like, for example, did you know that a blog is an online journal? Why didn\'t they call it a Onlojo then? I always wondered about that. I also always wonder about birds. I have seen some pictures of birds in some books and also on TV before and they\'re really cool looking. I wonder if one of them will ever eat me alive one day. I wonder if it will hurt. I don\'t mind if it hurts. All I really want out of this blog is to share my thoughts. I have so many of them. They never stop. I think that is why they made blogs. I one time read a blog about a man who built a table all by himself. I wonder how that man is doing. Do you think he\'s still building tables? I hope so, because he\'s really good at it. When I read his blog I got really sad because I don\'t know how to build a table. Tables are really important because they hold books and food and papers and other things. Most of the time people put plants on them too. I tried to build a table once and it didn\'t work out too well. It seems really hard. I cried all night because I couldn\'t build the table. My parents told me that I should try and be better. I think they are right. If I can\'t be better, I should try and be different. I guess it\'s okay, because I am really good at other things. Like writing blogs! And making websites! What do you think about this website? Does it look nice? I worked really hard on making it. The colors are so pretty to look at too. Every time I look at them I want to kill myself. My parents say if I do that I will go to Hell.  I\'m not afraid of Hell, I think it will be pretty fun to learn more about Satan. He seems really nice and he can probably teach me how to build a table. What do you think about tables? How many legs do you think a table should have? Do you think that legs are really important to a table? If I had wings, I would probably spend all day flying around. But I don\'t have wings, so that\'s why I write blogs instead. It\'s pretty much the same thing as flying around, just without the actual flying around. I think I would look pretty with wings. They would be puffy and white. Like angel wings! Do you think I\'m an angel? Really? Wow. Are you sure? Because I haven\'t done anything angelic in a long time. Dad says that angels have to do everything that God tells them to do, but all I ever hear God say is "It is time. It is time. It is time." I think if God ever wanted me to do something he would tell me directly, but all he ever says is "It is time. It is time. It is time. It is time. It is time. It is time. It is time.". Is that what Dad hears? Is that what Mom hears? Is that what you hear? Is it time yet? Is it time? Is it time? Is it time? Is it time?</p>';
+blogPost.innerHTML = '<h1>First Blog Post!</h1><p>Hey, this is my first blog post! It\'s about time, I have a lot of thoughts that I\'m ready to get out there into the wild. Like, for example, did you know that a blog is an online journal? Why didn\'t they call it a Onlojo then? I always wondered about that. I also always wonder about birds. I have seen some pictures of birds in some books and also on TV before and they\'re really cool looking. I wonder if one of them will ever eat me alive one day. I wonder if it will hurt. I don\'t mind if it hurts. All I really want out of this blog is to share my thoughts. I have so many of them. They never stop. I think that is why they made blogs. I one time read a blog about a man who built a table all by himself. I wonder how that man is doing. Do you think he\'s still building tables? I hope so, because he\'s really good at it. When I read his blog I got really sad because I don\'t know how to build a table. Tables are really important because they hold books and food and papers and other things. Most of the time people put plants on them too. I tried to build a table once and it didn\'t work out too well. It seems really hard. I cried all night because I couldn\'t build the table. My parents told me that I should try and be better. I think they are right. If I can\'t be better, I should try and be different. I guess it\'s okay, because I am really good at other things. Like writing blogs! And making websites! What do you think about this website? Does it look nice? I worked really hard on making it. The colors are so pretty to look at too. Every time I look at them I want to kill myself. My parents say if I do that I will go to Hell.  I\'m not afraid of Hell, I think it will be pretty fun to learn more about Satan. He seems really nice and he can probably teach me how to build a table. What do you think about tables? How many legs do you think a table should have? Do you think that legs are really important to a table? If I had wings, I would probably spend all day flying around. But I don\'t have wings, so that\'s why I write blogs instead. It\'s pretty much the same thing as flying around, just without the actual flying around. I think I would look pretty with wings. They would be puffy and white. Like angel wings! Do you think I\'m an angel? Really? Wow. Are you sure? Dad says that angels have to do everything that God tells them to do, but all I ever hear God say is "It is time. It is time. It is time." I think if God ever wanted me to do something he would tell me directly, but all he ever says is "It is time. It is time. It is time. It is time. It is time. It is time. It is time.". Is that what Dad hears? Is that what Mom hears? Is that what you hear? Is it time yet? Is it time? Is it time? Is it time? Is it time?</p>';
 document.body.appendChild(blogPost);
 
 var blogPost = document.getElementsByTagName('p')[0];
@@ -511,7 +560,7 @@ var isItTime = 'Is it time?';
 var isItTimeInterval = setInterval(function() {
   blogPost.innerHTML += isItTime;
 }, 1000);
-/* Whenever you click on the words they turn bold like an on and off switch. */
+
 var blogPost = document.getElementsByTagName('p')[0];
 var isItTime = 'Is it time?';
 var isItTimeInterval = setInterval(function() {
