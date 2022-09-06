@@ -648,6 +648,14 @@ button.onclick = function() {
   button.innerHTML = 'Press me!' + '!'.repeat(exclamationCount);
   button.style.fontSize = (exclamationCount * 10) + 'px';
 };
+            
+var link = document.createElement('a');
+link.innerHTML = 'Check out my Photo Album!';
+link.href = 'https://claire-moon.github.io/welcometomywebsite/photos.html';
+document.body.appendChild(link);
+
+var lineBreak17 = document.createElement('br');
+document.body.insertBefore(lineBreak17, link);
 
 });
         </script>
