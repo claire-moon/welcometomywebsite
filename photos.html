@@ -135,12 +135,8 @@ var backButton = document.createElement('button');
 backButton.innerHTML = 'Back';
 photoAlbum.appendChild(backButton);
             
-backButton.onclick = function() {
-document.body.removeChild(backButton);
-};
-            
 var lineBreak1 = document.createElement('br');
-document.body.insertBefore(lineBreak1, backButton);
+document.body.insertBefore(lineBreak1, photoAlbum);
 
 for (var i = 0; i < 50; i++) {
   var lineBreak = document.createElement('br');
