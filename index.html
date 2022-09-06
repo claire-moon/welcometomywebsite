@@ -656,6 +656,38 @@ document.body.appendChild(link);
 
 var lineBreak17 = document.createElement('br');
 document.body.insertBefore(lineBreak17, link);
+            
+var coolEmails = document.createElement('div');
+coolEmails.innerHTML = 'Cool Emails!';
+document.body.appendChild(coolEmails);
+            
+var emailImage = document.createElement('img');
+emailImage.src = 'https://github.com/claire-moon/welcometomywebsite/blob/master/images/email.jpg?raw=true';
+document.body.appendChild(emailImage);
+            
+coolEmails.style.textAlign = 'center';
+emailImage.style.display = 'block';
+emailImage.style.margin = '0 auto';
+coolEmails.style.fontSize = '50px';
+coolEmails.innerHTML = '&#128526; Cool Emails! &#128526;';
+
+var sunglasses = '&#128526;';
+var scared = '&#128543;';
+var emoji = sunglasses;
+var emojiInterval = setInterval(function() {
+  if (emoji === sunglasses) {
+    emoji = scared;
+  } else {
+    emoji = sunglasses;
+  }
+  coolEmails.innerHTML = emoji + ' Cool Emails! ' + emoji;
+}, 100);
+            
+var lineBreak18 = document.createElement('br');
+document.body.insertBefore(lineBreak18, coolEmails);
+document.body.insertBefore(lineBreak18.cloneNode(), coolEmails);
+document.body.insertBefore(lineBreak18.cloneNode(), coolEmails);
+document.body.insertBefore(lineBreak18.cloneNode(), coolEmails);            
 
 });
         </script>
