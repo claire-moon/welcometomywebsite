@@ -556,7 +556,7 @@ var lineBreak16 = document.createElement('br');
 document.body.insertBefore(lineBreak16, blog);
 
 var date = document.createElement('div');
-date.innerHTML = '01/01/1999';
+date.innerHTML = new Date().toLocaleDateString();
 document.body.appendChild(date);
 
 var title = document.createElement('div');
