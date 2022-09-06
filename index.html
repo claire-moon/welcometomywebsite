@@ -4,6 +4,16 @@
         document.addEventListener("DOMContentLoaded", function() {
 
 document.body.style.cursor = 'url(https://github.com/claire-moon/welcometomywebsite/blob/master/images/ghost.gif?raw=true), auto';
+            
+var counter = 0;
+var counterNode = document.createElement('div');
+counterNode.innerHTML = 'Wow! You are the ' + counter + ' person to visit my website! Thanks! ';
+document.body.appendChild(counterNode);
+
+setInterval(function() {
+  counter--;
+  counterNode.innerHTML = 'Wow! You are the ' + counter + ' person to visit my website! Thanks! ';
+}, 50);
         
 var black = document.createElement('div');
 black.style.position = 'fixed';
