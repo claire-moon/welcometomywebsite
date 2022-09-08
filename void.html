@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+document.body.style.cursor = 'url(https://github.com/claire-moon/welcometomywebsite/blob/master/images/ghost.gif?raw=true), auto';
+
+document.body.style.backgroundColor = 'black';
+document.body.style.color = 'white';
+
+var blackBox = document.createElement('div');
+blackBox.style.width = '100%';
+blackBox.style.height = '50000px';
+blackBox.style.backgroundColor = 'black';
+document.body.appendChild(blackBox);
+
+var hiThere = document.createElement('img');
+hiThere.src = 'https://github.com/claire-moon/welcometomywebsite/blob/master/images/hi_there.png?raw=true';
+hiThere.style.display = 'block';
+hiThere.style.margin = '0 auto';
+document.body.appendChild(hiThere);
+
+var scrollDown = function() {
+  window.scrollBy(0, 10);
+  setTimeout(scrollDown, 10);
+};
+scrollDown();
+});
+        </script>
+    </head>
+</html>
