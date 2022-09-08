@@ -5,6 +5,28 @@
 
 document.body.style.cursor = 'url(https://github.com/claire-moon/welcometomywebsite/blob/master/images/ghost.gif?raw=true), auto';
             
+var playButton = document.createElement('button');
+playButton.innerHTML = 'Check out this cool song!';
+document.body.appendChild(playButton);
+
+var audio = document.createElement('audio');
+audio.src = 'https://github.com/claire-moon/welcometomywebsite/blob/master/welcometomywebsite.mp3?raw=true';
+audio.loop = true;
+
+playButton.onclick = function() {
+  audio.play();
+  playButton.disabled = true;
+  playButton.innerHTML = 'Wow, you played the cool song!';
+};
+
+playButton.style.margin = 'auto';
+playButton.style.fontSize = '50px';
+playButton.style.fontFamily = 'wingdings';
+
+var lineBreakA = document.createElement('br');
+document.body.appendChild(lineBreakA);
+document.body.appendChild(lineBreakA.cloneNode(true));
+            
 var counter = 0;
 var counterNode = document.createElement('div');
 counterNode.innerHTML = 'Wow! You are the ' + counter + ' person to visit my website! Thanks! ';
